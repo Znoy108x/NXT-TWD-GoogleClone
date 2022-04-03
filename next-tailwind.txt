@@ -1,0 +1,18 @@
+--------------INSTALL--------------
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+--------------CONFIG--------------
+module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+--------------GLOABAL.CSS--------------
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

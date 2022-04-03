@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+    .a_link{
+        @apply  cursor-pointer hover:scale-110 transition duration-300 outline-none hover:text-white hover:bg-blue-600 rounded-3xl p-2
+        hover:ring-1 focus:outline-none 
+     }
+    .btn{
+        @apply hover:shadow-xl w-40  py-2 hover:scale-110 duration-300 transition hover:-translate-y-2
+    }
+}
